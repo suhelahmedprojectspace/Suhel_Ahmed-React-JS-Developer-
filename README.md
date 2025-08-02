@@ -45,7 +45,7 @@ A React application demonstrating theme switching with three distinct themes, in
 
 
 2. **Install dependencies**  
-```bash npm install
+```npm install
 
 yarn install
 ```
@@ -58,7 +58,24 @@ yarn install
 
 ---
 
-<pre><code>```bash /src /component Navbar.tsx # Responsive top navigation bar with theme switcher & mobile menu Sidebar.tsx # Sidebar navigation component used in dark mode (theme2) /context ThemeProvider.tsx # React Context for theme state management and persistence /pages Home.tsx # Home page fetching and displaying products from API About.tsx # Static about page (you can customize) Contact.tsx # Static contact page (you can customize) /theme theme.ts # Theme styles (Tailwind CSS classes) for different UI parts App.tsx # Main app layout applying themes & routing config index.tsx # Entry point, app bootstrapping with router and theme provider ``` </code></pre>---
+## Project Structure
+```/src
+/component
+Navbar.tsx # Responsive top navigation bar with theme switcher & mobile menu
+Sidebar.tsx # Sidebar navigation component used in dark mode (theme2)
+/context
+ThemeProvider.tsx # React Context for theme state management and persistence
+/pages
+Home.tsx # Home page fetching and displaying products from API
+About.tsx # Static about page (you can customize)
+Contact.tsx # Static contact page (you can customize)
+/theme
+theme.ts # Theme styles (Tailwind CSS classes) for different UI parts
+App.tsx # Main app layout applying themes & routing config
+index.tsx # Entry point, app bootstrapping with router and theme provider
+
+```
+---
 
 ## Usage Instructions
 
