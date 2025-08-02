@@ -63,20 +63,22 @@ yarn install
 ---
 
 ## Project Structure
-```/src
-/component
-Navbar.tsx # Responsive top navigation bar with theme switcher & mobile menu
-Sidebar.tsx # Sidebar navigation component used in dark mode (theme2)
-/context
-ThemeProvider.tsx # React Context for theme state management and persistence
-/pages
-Home.tsx # Home page fetching and displaying products from API
-About.tsx # Static about page (you can customize)
-Contact.tsx # Static contact page (you can customize)
-/theme
-theme.ts # Theme styles (Tailwind CSS classes) for different UI parts
-App.tsx # Main app layout applying themes & routing config
-index.tsx # Entry point, app bootstrapping with router and theme provider
+```
+/src
+  /component
+    Navbar.tsx           # Responsive top navigation bar with theme switcher & mobile menu
+    Sidebar.tsx          # Sidebar component used in dark mode (theme2) with navigation and theme switcher
+  /context
+    ThemeProvider.tsx    # React Context provider for theme state management and persistence
+  /pages
+    Home.tsx             # Home page fetching and displaying product data from fake store API
+    About.tsx            # Static About page (customizable)
+    Contact.tsx          # Static Contact page (customizable)
+  /theme
+    theme.ts             # Theme definitions: Tailwind CSS class sets per theme for layout, navbar, buttons, etc.
+  App.tsx                # Main app container applying theme classes and routing setup
+  index.tsx              # React app entry point; renders App within router and ThemeProvider contexts
+
 ```
 
 ---
