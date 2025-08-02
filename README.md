@@ -44,14 +44,14 @@ A React application demonstrating theme switching with three distinct themes, in
 ## cd tswitcher
 
 
-2. **Install dependencies**  
-Using NPM:
+2. **Install dependencies**
+* Using NPM:
 ```bash
 npm install
 ```
-Using Yarn:
-```bash yarn install
-```
+* Using Yarn:
+```bash
+yarn install
 3. **Start the development server**  
 
 
