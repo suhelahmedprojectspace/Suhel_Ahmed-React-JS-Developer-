@@ -48,10 +48,10 @@ A React application demonstrating theme switching with three distinct themes, in
 Using NPM:
 ```bash
 npm install
-
+```
 Using Yarn:
 ```bash yarn install
-
+```
 3. **Start the development server**  
 
 
@@ -75,7 +75,7 @@ Contact.tsx # Static contact page (you can customize)
 theme.ts # Theme styles (Tailwind CSS classes) for different UI parts
 App.tsx # Main app layout applying themes & routing config
 index.tsx # Entry point, app bootstrapping with router and theme provider
-
+```
 
 ---
 
