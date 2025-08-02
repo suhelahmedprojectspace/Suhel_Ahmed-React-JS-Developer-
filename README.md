@@ -40,7 +40,8 @@ A React application demonstrating theme switching with three distinct themes, in
 ## Installation
 
 1. **Clone the repository**  
-## git clone https://github.com/yourusername/tswitcher.git
+## git clone https://github.com/suhelahmedprojectspace/Suhel_Ahmed-React-JS-Developer-.git
+
 ## cd tswitcher
 
 
