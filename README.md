@@ -45,9 +45,9 @@ A React application demonstrating theme switching with three distinct themes, in
 
 
 2. **Install dependencies**  
-```npm install
-
-yarn install
+``` npm install
+```
+``` yarn install
 ```
 
 3. **Start the development server**  
@@ -132,11 +132,6 @@ index.tsx # Entry point, app bootstrapping with router and theme provider
 
 ---
 
-## License
-
-MIT © YourName
-
----
 
 ## Acknowledgments
 
