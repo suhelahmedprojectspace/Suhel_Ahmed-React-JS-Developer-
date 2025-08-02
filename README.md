@@ -45,10 +45,10 @@ A React application demonstrating theme switching with three distinct themes, in
 
 
 2. **Install dependencies**  
-npm install
+```bash npm install
 
 yarn install
-
+```
 
 3. **Start the development server**  
 
@@ -58,5 +58,78 @@ yarn install
 
 ---
 
-## Project Structure
+<pre><code>```bash /src /component Navbar.tsx # Responsive top navigation bar with theme switcher & mobile menu Sidebar.tsx # Sidebar navigation component used in dark mode (theme2) /context ThemeProvider.tsx # React Context for theme state management and persistence /pages Home.tsx # Home page fetching and displaying products from API About.tsx # Static about page (you can customize) Contact.tsx # Static contact page (you can customize) /theme theme.ts # Theme styles (Tailwind CSS classes) for different UI parts App.tsx # Main app layout applying themes & routing config index.tsx # Entry point, app bootstrapping with router and theme provider ``` </code></pre>---
+
+## Usage Instructions
+
+- **Switch Themes**  
+  Use the dropdown menu in the navbar (desktop) or mobile menu to select between the three available themes. The app's colors, typography, layout, and styles will update instantly.
+
+- **Navigate Pages**  
+  Use the navigation links in the navbar or sidebar to switch between Home, About, and Contact pages.
+
+- **Mobile Navigation**  
+  On small screens, tap the hamburger icon to open a sliding menu with navigation and theme selector. Tap outside or the close icon to dismiss.
+
+---
+
+## Customization
+
+- **Adding Themes**  
+  Extend `src/theme/theme.ts` with new theme objects following the existing structure. Add a `name` property for display, and provide Tailwind CSS class strings for layout, navbar, sidebar, cards, buttons etc.
+
+- **Pages**  
+  Edit or replace the components in `/pages` to add your own content.
+
+- **Styling**  
+  Adjust Tailwind configuration or add custom CSS in `index.css` or component-specific styles as needed.
+
+---
+
+## Accessibility
+
+- Semantic HTML and ARIA attributes are used for buttons and inputs.
+- Keyboard accessible menu toggles.
+- Proper focus styles using Tailwind focus utilities.
+- Responsive for various screen sizes.
+
+---
+
+## Dependencies
+
+- react
+- react-dom
+- react-router-dom
+- lucide-react (icons)
+- axios
+- tailwindcss (plus autoprefixer & postcss)
+- typescript
+
+---
+
+## Known Issues
+
+- Theme persistence relies on localStorage and applies CSS classes to `document.body`. Adjust if you have conflicting body classes.
+- Sidebar for Theme 2 is fixed width, may need layout tuning on very small desktop screens.
+- API data depends on Fake Store API availability.
+
+---
+
+## License
+
+MIT © YourName
+
+---
+
+## Acknowledgments
+
+- [Fake Store API](https://fakestoreapi.com) for sample product data
+- [Tailwind CSS](https://tailwindcss.com) for styling utilities
+- [Lucide Icons](https://lucide.dev) for React SVG icons
+
+---
+
+Feel free to open issues or feature requests!
+
+Happy coding! 🚀
 
